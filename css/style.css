@@ -153,6 +153,9 @@ button::-moz-focus-inner {
 	background:rgb(255,255,255);
 	background:rgba(255,255,255,0.75);
 }
+.main.nobg {
+	background:transparent;
+}
 .main img {
 	margin:0 0 30px;
 }
@@ -240,6 +243,7 @@ button::-moz-focus-inner {
 }
 .description {
 	padding:30px 75px 16px 95px;
+	margin:0 0 40px;
 	background:rgb(0,0,0);
 	background:rgba(0,0,0,0.75);
 }
@@ -431,6 +435,26 @@ h5.author img {
 .mobile h5.author {
 	left:70px;
 	bottom:37px;
+}
+.desktop .description.fixed {
+	position:absolute;
+	right:75px;
+	bottom:0;
+	width:560px;
+	-moz-box-shadow:border-box;
+	-webkit-box-shadow:border-box;
+	box-sizing:border-box;
+}
+@media screen and (min-width: 1020px) {
+	.mobile .description.fixed {
+		position:absolute;
+		right:75px;
+		bottom:0;
+		width:560px;
+		-moz-box-shadow:border-box;
+		-webkit-box-shadow:border-box;
+		box-sizing:border-box;
+	}
 }
 @media screen and (max-width: 1020px) {
 	.mobile .wrapper {
