@@ -65,8 +65,7 @@ $(document).ready(function() {
 	});
 	$('.menu > ul > li > ul').parent().children('a').bind('click', function(event) {
 		var t = $(this).parent();
-		t.children('ul').stop().slideDown(200);
-		t.siblings().children('ul').stop().slideUp(200);
+		t.children('ul').stop().slideToggle(200);
 		event.preventDefault();
 	});
 	$('input, textarea').each(function() {
